@@ -44,12 +44,12 @@ $(document).ready(function() {
     event.preventDefault();
     var userName = $('#userName').val();
     var currentUser = new User(userName);
-    runSearch(currentUser);
+    runSearch(currentUser, pageNumber);
     $('#next-page').submit(function(event) {
       $('#gallery-row0').html("");
       event.preventDefault();
       pageNumber = pageNumber + 1;
-      runSearch(currentUser);
+      runSearch(currentUser, pageNumber);
     });
     $('#prev-page').submit(function(event) {
       $('#gallery-row0').html("");
@@ -57,11 +57,13 @@ $(document).ready(function() {
       if (pageNumber > 1) {
         pageNumber = pageNumber - 1;
       }
-      runSearch(currentUser);
+      runSearch(currentUser, pageNumber);
     });
     $('#user-back').click(function() {
+      $('#user-back').hide();
       $('#user-space').hide();
       $('#user-gallery').show();
+      $('#gallery-header').show();
     })
   });
 });

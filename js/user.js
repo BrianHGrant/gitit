@@ -37,7 +37,6 @@ User.prototype.searchName = function(pageNumber, displaySearchResult, displayUse
     }
   }).then(function(response){
     $('.user-image').click(function(event) {
-      $('#single-user-repo-languages').html("");
       $('#user-back').show();
       var searchUser = this.alt;
       getUser(searchUser, displayUser);
