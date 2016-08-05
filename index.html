@@ -12,22 +12,65 @@
       <h1>GitiT</h1>
       <h2>A search resource for Github</h2>
       <hr>
-      <h3>Basic Search</h3>
-      <form id="username-search">
-        <label for="userName">Username:</label>
-        <input type="text" id="userName">
-        <button class="btn btn-primary" type="submit">Search</button>
-      </form>
-      <div id='showCount'>
-      </div>
-      <div id='gallery-nav'>
-        <form id="next-page">
-          <input type="hidden" id="page-number">
-          <button type="submit">Next Page</button>
+      <div class="basic-search-area">
+        <h3>Basic Search</h3>
+        <form id="username-search">
+          <label for="userName">Username:</label>
+          <input type="text" id="userName">
+          <button class="btn btn-primary" type="submit" id="search-button">Search</button>
         </form>
       </div>
-      <div id="user-gallery">
-        <div class="row" id ="gallery-row0">
+      <hr>
+      <div id='showCount'>
+      </div>
+      <div id="gallery-header">
+        <div id='gallery-nav'>
+          <div class ="row">
+            <div class="col-sm-2 float-left">
+              <form id="prev-page">
+                <button type="submit">Prev Page</button>
+              </form>
+            </div>
+            <div class="col-sm-offset-8 col-sm-2 float-right">
+              <form id="next-page">
+                <button type="submit">Next Page</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="gallery-instructions">
+          <h4>Click on picture to view more info. Click username to goto their GitHub page.</h4>
+        </div>
+      </div>
+      <div class ="row">
+        <div class="col-sm-offset-1">
+          <div id="user-gallery">
+            <div class="row" id ="gallery-row0">
+            </div>
+          </div>
+          <div id="user-space">
+            <div class = "row">
+              <div class = "col-sm-offset-4 col-sm-4">
+                <img class="img-responsive img-rounded" id="single-user-img" src="" alt="">
+                <h3 id="single-user-title"></h3>
+              </div>
+            </div>
+            <div class="row main-footer">
+              <div class="col-md-3 left-footer">
+                <h4>About:</h4>
+                <p id="single-user-bio"></p>
+                <h5>Joined GitHub:</h5>
+                <p id="single-user-created-at"></p>
+                <h5>Location:</h5>
+                <p id="single-user-location"></p>
+                <h5>Looking for Work:</h5>
+                <p id="single-user-hireable"></p>
+              </div>
+              <div class="col-md-9 right-footer">
+                <h4>Repository Info:</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
