@@ -20,13 +20,24 @@ var displayUser = function(avatar_url, login, bio, created_at, location, hireabl
   $('#single-user-hireable').text(hireable);
 }
 
+var displayRepos = function(totalCount) {
+  $('#single-user-repo-totalCount').text(totalCount);
+}
+
+var displayLanguages = function(languageList) {
+  languageList.forEach(function(language) {
+    $('#single-user-repo-languages').append('<li>'+ language +'</li>');
+  })
+}
+
 var runSearch = function(searchInput, pageNumber){
-  searchInput.searchName(pageNumber, displaySearchResult, displayUser);
+  searchInput.searchName(pageNumber, displaySearchResult, displayUser, displayRepos, displayLanguages);
 }
 
 $(document).ready(function() {
   var pageNumber = 1;
   $('#username-search').submit(function(event) {
+    $('#user-space').hide();
     $('#gallery-row0').html("");
     $('#user-gallery').show();
     $('#gallery-header').show();
