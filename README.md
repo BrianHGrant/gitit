@@ -31,6 +31,8 @@ This repository contains basic template to setup Node.js based projects for Epic
     "gulp": "^3.9.1",<br>
     "gulp-concat": "^2.6.0",<br>
     "gulp-jshint": "^2.0.1",<br>
+    "gulp-sass": "^2.3.2",<br>
+    "gulp-sourcemaps": "^1.6.0",<br>
     "gulp-uglify": "^1.5.4",<br>
     "gulp-util": "^3.0.7",<br>
     "jshint": "^2.9.2",<br>
