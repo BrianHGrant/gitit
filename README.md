@@ -1,15 +1,10 @@
-# Node.js Template
+# GitiT
 #### Node.js, NPM (backend), Bower(frontend)
 #### DESCRIPTION
 
-This repository contains basic template to setup Node.js based projects for Epicodus JavaScript course.
+This repository enables searching for a user in the Github website.
 
 #### Contents
-
-* package.json - NPM install file for backend packages
-* bower.json - Bower install file for frontend packages
-* gulpfile.js - Gulp file
-* index.html - Basic template for landing page
 
 ##### How to Use
 
@@ -18,7 +13,11 @@ This repository contains basic template to setup Node.js based projects for Epic
 3. Update project name in package.json, bower.json, and title in index.html
 4. Run: npm install
 5. Run: bower install
-6. Start coding
+6. Run: Gulp Serve, page should load in browser.
+7. If you would like to make more then 50 requests a day signup for a Github Personal Access token. Create a file within local repo named ".env". File should contain the following lines:
+
+apiKey = "{insert your token here}"
+exports.apiKey
 
 ##### Packages
 
@@ -44,9 +43,13 @@ This repository contains basic template to setup Node.js based projects for Epic
     "bootstrap": "^3.3.7",<br>
 
 
+##### Template
+  Checkout the original template used to create this application here:
+  <a href="https://github.com/BrianHGrant/node-template">node-template</a>
+
 ##### Licence
 
-License Copyright (c) 2016 Brian Grant, Kyle Heylar
+License Copyright (c) 2016 Brian Grant
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
