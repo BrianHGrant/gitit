@@ -3,14 +3,33 @@
   <head>
     <title>GitiT</title>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
   </head>
   <body>
-    <form id="username-search">
-      <label for="userName">Username:</label>
-      <input type="text" id="userName">
-      <button type="submit">Search</button>
-    </form>
+    <div class="container">
+      <h1>GitiT</h1>
+      <h2>A search resource for Github</h2>
+      <hr>
+      <h3>Basic Search</h3>
+      <form id="username-search">
+        <label for="userName">Username:</label>
+        <input type="text" id="userName">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+      <div id='showCount'>
+      </div>
+      <div id='gallery-nav'>
+        <form id="next-page">
+          <input type="hidden" id="page-number">
+          <button type="submit">Next Page</button>
+        </form>
+      </div>
+      <div id="user-gallery">
+        <div class="row" id ="gallery-row0">
+        </div>
+      </div>
+    </div>
   </body>
 </html>
