@@ -59,5 +59,9 @@ $(document).ready(function() {
       }
       runSearch(currentUser);
     });
+    $('#user-back').click(function() {
+      $('#user-space').hide();
+      $('#user-gallery').show();
+    })
   });
 });
