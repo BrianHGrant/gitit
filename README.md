@@ -16,12 +16,8 @@ This repository enables searching for a user in the Github website.
 6. Run: Gulp Serve, page should load in browser.
 7. If you would like to make more then 50 requests a day signup for a Github Personal Access token. Create a file within local repo named ".env". File should contain the following lines:
 
-<<<<<<< HEAD
-apiKey = "{insert your token here}"<br>
-=======
-apiKey = "{insert your token here}"
->>>>>>> 7e2b9706d224f78ee2d06ded92caf8f2af5cb3ac
-exports.apiKey
+        apiKey = "{insert your token here}"
+        exports.apiKey
 
 ##### Packages
 
